@@ -88,7 +88,7 @@ export const showImageController = async(req, res) => {
                         "richContent":products.map(p => ([
                             {
                               type: "image",
-                              rawUrl: `https://back-433107.uc.r.appspot.com/api/v1/product/product-photo/${p._id}`,
+                              rawUrl: `https://ecommerce-beta-ochre-26.vercel.app/api/v1/product/product-photo/${p._id}`,
                               accessibilityText: p.category.name,
                               reference: {
                                 anchor: {
@@ -194,7 +194,7 @@ export const showOrderStatus = async(req, res) => {
           "title": `Price: $${p.price}`,
           "subtitle": `${p.name}`,
           "image": {
-            "rawUrl": `https://back-433107.uc.r.appspot.com/api/v1/product/product-photo/${p._id}`
+            "rawUrl": `https://ecommerce-beta-ochre-26.vercel.app/api/v1/product/product-photo/${p._id}`
           },
           "text": `${p.description}`
         })) || [];
